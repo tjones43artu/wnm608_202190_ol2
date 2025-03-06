@@ -52,7 +52,20 @@ a:hover {
 	text-decoration: underline;
 }
 
+.favorite label {
+	transition: all 0.3s;
+	position: relative;
+	transform: scale(1,1);
+	color: var(--color-neutral-medium);
+}
 
+.favorite input:checked + label {
+	color: red;
+}
+
+.favorite input:checked + label {
+	color: red;
+}
 
 
 
@@ -249,4 +262,140 @@ button {
 
 button:hover {
  	color: black;
+}
+
+/*Forms*/
+input {
+	-webkit-wrting-mode: horizontal-tb !important;
+	text-rendering: auto;
+	color: internal-light-dark-color(black, white);
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	text-align: start;
+	-webkit-appearance: textfield;
+	background-color: internal-light-dark-color(rgb(255, 255, 255), rgb(59, 59, 59));
+	-webkit-rtl-ordering: logical;
+	cursor: text;
+	margin: 0em;
+	font: 400 13.3333px Arial;
+	border-width: 2px;
+	border-style: inset;
+	border-color: -internal-light-dark(118, 118, 118),rgb(195,195, 195);
+	border-image: initial;
+}
+
+.form-input {
+	outline: 0;
+	display: inline-block;
+	background-color: transparent;
+	border-width: 0;
+	padding: 0.2em, 0.5em;
+	width: 100%;
+	font: inherit;
+	border-bottom: 1px solid var(--color-neutral-medium)
+}
+
+.form-input:focus {
+	border-bottom-color:var(--color-main-light);
+}
+
+.form-label {
+	font-size: 0.8em;
+	color: var(--color-neutral-medium);
+	display: block;
+	width: 100%;
+}
+
+.form-button {
+	display: inline-block;
+	background-color: var(--color-neutral-light);
+	border-width: 0;
+	padding: 0.5em 1em;
+	font: inherit;
+	-webkit-appearance: none;
+	color: inherit;
+	width: 100%;
+	outline: 0;
+	border-radius: 0.2em;
+	cursor: pointer;
+	text-align: center;
+}
+
+.form-button:hover {
+	text-decoration: none;
+}
+
+.form-button:active {
+	background-color: var(--color-main-light);
+}
+
+.hotdog {
+	background-color: var(--color-neutral-light);
+	border-radius: 2em;
+	padding: 0.5em 1.5em;
+	display: flex;
+}
+
+.hotdog.dark {
+	background-color: var(--color-white);
+	color: var(--color-neutral-light);
+}
+
+.hotdog.light {
+	background-color: var(--color-neutral-light);
+	color: var(--color-black);
+}
+
+
+.form-select>select{
+	padding: 0.5em 1em;
+	background-color: var(--color-neutral-light);
+	border-radius: 0.3em;
+	cursor: pointer;
+}
+
+.form-select {
+	position: relative;
+}
+
+.form-select::after {
+	content: '';
+	font-family: arial, sans-serif;
+	font-size: 0.8em;
+	position: absolute;
+	top: 50%;
+	right: 0.5em;
+	transition: translateY(-50%);
+	pointer-events: none;
+	color: var(--color-neutral-medium);
+}
+
+
+/*Toggle*/
+.toggle label {
+	display: inline-block;
+	width: 2em;
+	height: 1em;
+	border: 0.1em solid var(--color-neutral-medium);
+	border-radius: 1em;
+	position: relative;
+}
+
+.toggle label::after {
+	content:'';
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	border-radius: 1em;
+	position: absolute;
+	background-color: var(--color-neutral-light);
+	transition: all 0.3s;
+}
+
+.toggle input:checked + label::after {
+	transform:translateX(1em);
 }
