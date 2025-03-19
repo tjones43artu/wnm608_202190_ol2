@@ -16,35 +16,31 @@
 </head>
 
 <body>
-	
-	<!-- header>h1+p -->
-
 <header class="navbar">
 	<div class="container display-flex">
 		<div class="flex-none">
 		<h1 class="title">Style Guide</h1>
 		</div>
-		<div class="flex-stretch"></div>
+
+<div class="flex-stretch"></div>
 	<nav class="nav flex-none">
 		<ul class="container display-flex">
 			<li class="flex-stretch"><a href="#article1">Table of Contents</a></li>
 		</ul>
-	</nav>
- 	</div>
-	</header>
+	</nav></div>
+</header>
 
+
+
+<section>
 	<div class="container" id="tableofcontents">
 		<div class="card">
+				<nav class="card">
 			<h2>Table of Contents</h2>
 			<ul>
-				<li>
-					<a href="#typography">Typogragphy</a>
-				</li>
-				<ul>
-					<li>
-						<a href="#headings">Headings</a></li>
-						<li><a href="#typography">Typography</a></li>
-				</ul>
+				<li><a href="#typography">Typogragphy</a></li>
+				<li><a href="#headings">Headings</a></li>
+				<li><a href="#typography">Typography</a></li>
 				<li><a href="#cards">Cards</a></li>
 				<li><a href="#viewwindow">View Window</a></li>
 				<li><a href="#navigations">Navigations</a></li>
@@ -52,16 +48,26 @@
 				<li><a href="#flexsystem">Flex System</a></li>
 				<li><a href="#tables">Tables</a></li>
 				<li><a href="#forms">Forms</a></li>
-				<ul>
-					<li><a href="#inputs">Inputs</a></li>
-				</ul>
+				<li><a href="#inputs">Inputs</a></li>
+				<li><a href="#labels">Labels</a></li>
+				<li><a href="#controls">Controls</a></li>
+				<li><a href="#buttons">Buttons</a></li>
+				<li><a href="#labels">Hotdogs</a></li>
+				<li><a href="#labels">Select</a></li>
+				<li><a href="#labels">Check Boxes</a></li>
+				<li><a href="#labels">Color Palette</a></li>
 			</ul>
+					<!-- Color Palette <li> -->
+
+
+			</nav>
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container" id="typography">
 		<div class="card soft" id="headings">
-			<h2>Typography</h2>
+
+			<h3>Headings</h3>
 			<h1>Heading 1</h1>
 			<h2>Heading 2</h2>
 			<h3>Heading 3</h3>
@@ -69,51 +75,66 @@
 			<h5>Heading 5</h5>
 			<h6>Heading 6</h6>
 		</div>
+
 	<div class="card soft" id="paragraphs">
 		<h3>Paragraphs</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<p>Efficitur libero morbi dis vehicula massa risus aliquam etiam. Mus potenti libero eleifend pulvinar cubilia. Inceptos enim pulvinar; ipsum vestibulum enim semper maximus habitasse. Platea blandit consectetur augue facilisi orci arcu. Convallis fringilla senectus facilisi faucibus nascetur litora erat. Fringilla facilisi enim habitant dapibus nam class. Platea etiam taciti bibendum dictum porttitor integer. Pulvinar justo sem varius primis volutpat platea ex curabitur pretium. Ultrices eros curabitur fermentum dolor faucibus himenaeos convallis!</p>
-		<p>Morbi adipiscing suscipit arcu, felis commodo proin sit. Facilisi nibh lacus class aptent, suscipit posuere elit condimentum. Iaculis non parturient sagittis scelerisque amet vulputate finibus blandit. Habitant per habitasse viverra praesent facilisis volutpat tellus nec. Amet semper euismod cursus potenti pellentesque curae proin ligula. Rutrum phasellus nascetur arcu nibh vulputate ultrices. Suscipit augue sem ultrices eros cras mi. Neque montes eget ex vitae imperdiet interdum dapibus. Nullam ornare sem, cras neque justo condimentum curabitur?</p>
-		<div class="container">
-			<h2>Cards</h2>
 
-			<div class="grid gap">
-				<div class="col-x2-12 col-md-3"><div class="card">Card</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+		<p>Efficitur libero morbi dis vehicula massa risus aliquam etiam. Mus potenti libero eleifend pulvinar cubilia. Inceptos enim pulvinar; ipsum vestibulum enim semper maximus habitasse. Platea blandit consectetur augue facilisi orci arcu. Convallis fringilla senectus facilisi faucibus nascetur litora erat.</p>
+
+		<p>Morbi adipiscing suscipit arcu, felis commodo proin sit. Facilisi nibh lacus class aptent, suscipit posuere elit condimentum. Iaculis non parturient sagittis scelerisque amet vulputate finibus blandit. Habitant per habitasse viverra praesent facilisis volutpat tellus nec. ?</p>
+	</div>
+
+<section>
+<div class="container" id="#cards">
+			<h2>Cards</h2>
+		<div class="grid gap">
+
+			<div class="col-sm-12 col-md-4"><div class="card">Card</div>
 			</div>
-			<div class="col-x2-12 col-md-3"><div class="card soft">Card Soft</div>
-			<div class="col-x2-12 col-md-3"><div class="card hard">Card Hard</div>
-			<div class="col-x2-12 col-md-3"><div class="card flat">
-			<div class="col-x2-12 col-md-3"><div class="card dark">Card Dark</div>
-			<div class="col-x2-12 col-md-3"><div class="card medium">Card Medium</div>
+
+			<div class="col-sm-12 col-md-4"><div class="card soft">Card Soft</div></div>
+
+			<div class="col-sm-12 col-md-4"><div class="card hard">Card Hard</div></div>
+
+			<div class="col-sm-12 col-md-4"><div class="card flat">Card Flat</div></div>
+
+			<div class="col-sm-12 col-md-4"><div class="card dark">Card Dark</div><div>
+
+			<div class="col-sm-12 col-md-4"><div class="card medium">Card Medium</div></div>
 		</div>
 	</div>
+</section>
+
+
+	<div class="card soft" id="viewwindow">
+		<article class="view" id="view">
+			<h3>View Window</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</article>
 	</div>
 
-
-	<div class="container">
-		<h2>View Window</h2>
-	</div>
-
-	<div class="container">
-		<h2>Navigations</h2>
-
-		
-<script>
+	
+<div class="container" id="navigations">
+		<h3>Navigations</h3>
+	<script>
 	const makeNav = (classes='') => {
 		const links = ['home', 'store', 'about'];
 		return
 		<div>
 			<nav class="${classes}">
 			<ul>
-				$(links.reduce((r,o,i)=>{
-					return r+ <li><a href="#">${o}</a></li>';
-				})}
+			$(links.reduce((r,o,i)=>{
+					return r+' <li><a href="#">${o}</a></li>';
+				},'')}
 				</ul>
 			</nav>
 		</div>
 		';
 	}
-</script>
+	</script>
+
 
 <div class="card soft">
 			<h3>Basic Nav</h3>
@@ -205,12 +226,60 @@
 	})
 </script>
 
-	<div class="container">
+	<div class="container" id="gridsystem"> 
 		<h2>Grid System</h2>
+		<div class="card soft">
+			<h3>12 Column Grid Layout</h3>
+			<div class="col-xs-12 col-md-6">6 Columns</div>
+			<div class="col-xs-12 col-md-6">6 Columns</div>
+		</div>
+		<div class="card soft" id="responsivegrid">
+			<h3>Responsive Grid</h3>
+			<div class="col-xs-12 col-md-4">4 Columns</div>
+			<div class="col-xs-12 col-md-4">4 Columns</div>
+			<div class="col-xs-12 col-md-4">4 Columns</div>
+		</div>
+
+		<div class="card soft" id="guttergrid">
+			<h3>Grid With Gutters</h3>
+			<div class="col-xs-12 col-md-6">6 Columns</div>
+			<div class="col-xs-12 col-md-6">6 Columns</div>
+		</div>
 	</div>
 
-	<div class="container">
+	<div class="container" id="flexsystem">
 		<h2>Flex System</h2>
+		<div class="card soft">
+			<h3>Basic Flexbox Layout</h3>
+				<div class="display-flex">
+				<div>Flex Item 1</div>
+				<div>Flex Item 2</div>
+			</div>
+		</div>
+
+		<div class="card soft">
+			<h3>Flexbox With Direction</h3>
+				<div class="display-flex flex-direction-column">
+					<div>Column Item 1</div>
+					<div>Column Item 2</div>
+			</div>
+		</div>
+
+		<div class="card soft">
+			<h3>Flexbox With Alignment</h3>
+				<div class="display-flex flex-align-center flex-justify-center">
+					<div>Flex Item 1</div>
+			</div>
+		</div>
+
+		<div class="card soft">
+			<h3>Responsive Flexbox</h3>
+				<div class="display-flex flex-direction-column flex-md-direction-row">
+					<div>Responsive Item 1</div>
+					<div>Responsive Item 2</div>
+			</div>
+		</div>
+		</div>
 	</div>
 
 
@@ -240,13 +309,14 @@
 		}
 	
 </script>
-	<div class="container">
-		<h2>Tables</h2>
+	<div class="container" id="tables">
+		<h2>Tables</h2>/<div>
+
 	<div class="card soft">
 		<h3>Basic Table</h3>
 	</div>
-	<script>makeTable("table")</script>
-	</div>
+	<script> makeTable =("table") </script>
+	
 
 <div class="container" id="forms">
 	<h2>Forms</h2>
@@ -382,6 +452,8 @@
 	</div>
 	</div>
 </div>
+
+<h2>Color Palette</h2>
 <body>
 	
 </body>
