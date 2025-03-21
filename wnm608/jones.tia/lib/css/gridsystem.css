@@ -2,18 +2,22 @@
 
 .grid {
 	display: grid;
-  	grid-template-columns: repeat(12, 1fr);
-  	gap: 10px;
-  	padding: 3px;
+  	grid-template-columns: auto auto auto;
+  	padding: 10px;
 }
 
+.grid > div {
+  background-color: white;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
 
-.grid.gap {
+.grid-gap {
 	--grid-gap: 1em;
 	grid-gap: var(--grid-gap);
 	gap: var(--grid-gap);
-	align-items: center;
-	align-content: center;
+	
 }
 
 .col-1 { grid-column: span 1; }

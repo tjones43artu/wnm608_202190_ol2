@@ -32,12 +32,12 @@
 
 
 
-<section>
+
 	<div class="container" id="tableofcontents">
 		<div class="card">
-				<nav class="card">
+				<nav class="card hard">
 			<h2>Table of Contents</h2>
-			<ul>
+			<ul style="text-decoration: none;">
 				<li><a href="#typography">Typogragphy</a></li>
 				<li><a href="#headings">Headings</a></li>
 				<li><a href="#typography">Typography</a></li>
@@ -57,17 +57,14 @@
 				<li><a href="#labels">Check Boxes</a></li>
 				<li><a href="#labels">Color Palette</a></li>
 			</ul>
-					<!-- Color Palette <li> -->
-
-
 			</nav>
 		</div>
 	</div>
 
-	<div class="container" id="typography">
-		<div class="card soft" id="headings">
 
-			<h3>Headings</h3>
+	<div class="container" id="typography">
+		<h3>Headings</h3>
+		<div class="card soft" id="headings">	
 			<h1>Heading 1</h1>
 			<h2>Heading 2</h2>
 			<h3>Heading 3</h3>
@@ -86,34 +83,23 @@
 		<p>Morbi adipiscing suscipit arcu, felis commodo proin sit. Facilisi nibh lacus class aptent, suscipit posuere elit condimentum. Iaculis non parturient sagittis scelerisque amet vulputate finibus blandit. Habitant per habitasse viverra praesent facilisis volutpat tellus nec. ?</p>
 	</div>
 
-<section>
-<div class="container" id="#cards">
-			<h2>Cards</h2>
-		<div class="grid gap">
 
-			<div class="col-sm-12 col-md-4"><div class="card">Card</div>
-			</div>
-
-			<div class="col-sm-12 col-md-4"><div class="card soft">Card Soft</div></div>
-
-			<div class="col-sm-12 col-md-4"><div class="card hard">Card Hard</div></div>
-
-			<div class="col-sm-12 col-md-4"><div class="card flat">Card Flat</div></div>
-
-			<div class="col-sm-12 col-md-4"><div class="card dark">Card Dark</div><div>
-
-			<div class="col-sm-12 col-md-4"><div class="card medium">Card Medium</div></div>
+<h3>Cards</h3>	
+		<div class="grid">
+			<div style="width: 250px; font-size: 20px;" class="card">Card</div>
+			<div style="width: 250px; font-size: 20px;" class="card soft">Card Soft</div>
+			<div style="width: 250px; font-size: 20px;" class="card hard">Card Hard</div>
+			<div style="width: 250px; font-size: 20px;" class="card flat">Card Flat</div>
+			<div style="width: 250px; font-size: 20px;" class="card dark">Card Dark</div>
+			<div style="width: 250px; font-size: 20px;" class="card medium">Card Medium</div>
 		</div>
-	</div>
-</section>
 
-
-	<div class="card soft" id="viewwindow">
-		<article class="view" id="view">
-			<h3>View Window</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<h3>View Window</h3>
+<div class="view-window" style="background-image:url(../img/junel-mujar-51jzoz1dsro-unsplash.jpg);">
+	<article class="view" id="view">
+			<p style="color:white; text-align: center; padding: 50px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		</article>
-	</div>
+</div>
 
 	
 <div class="container" id="navigations">
@@ -139,7 +125,7 @@
 <div class="card soft">
 			<h3>Basic Nav</h3>
 			<script>makeNav('nav')</script>
-	
+	<div class="grid">
 		<nav class="nav">
 			<ul>
 				<li><a href="#">Link 1</a></li>
@@ -147,9 +133,9 @@
 				<li><a href="#">Link 3</a></li>
 				<li><a href="#">Link 4</a></li>
 			</ul>
+
 		</nav>
 		</div>
-
 	</div>
 
 		<div class="card soft">
@@ -193,7 +179,7 @@
 		</div>
 
 		<div class="card soft">
-			<h3>Pills Crumbs</h3>
+			<h3>Crumbs Nav</h3>
 			<script>makeNav('nav nav-crumbs')</script>
 			<nav class="nav nav-crumbs">
 			<ul>
@@ -206,7 +192,7 @@
 		</div>
 
 		<div class="card soft">
-			<h3>Pills Material</h3>
+			<h3>Material Nav</h3>
 			<script>makeNav('nav nav-material')</script>
 			<nav class="nav nav-material">
 			<ul>
@@ -226,24 +212,30 @@
 	})
 </script>
 
+	<h2>Grid System</h2>
 	<div class="container" id="gridsystem"> 
-		<h2>Grid System</h2>
 		<div class="card soft">
 			<h3>12 Column Grid Layout</h3>
-			<div class="col-xs-12 col-md-6">6 Columns</div>
-			<div class="col-xs-12 col-md-6">6 Columns</div>
+			<div class="grid">
+			<div style="font-size: 16px; align-items: center;" class="col-1">6 Columns</div>
+			<div style="font-size: 16px;" class="col-1">6 Columns</div>
+			</div>
 		</div>
 		<div class="card soft" id="responsivegrid">
 			<h3>Responsive Grid</h3>
-			<div class="col-xs-12 col-md-4">4 Columns</div>
-			<div class="col-xs-12 col-md-4">4 Columns</div>
-			<div class="col-xs-12 col-md-4">4 Columns</div>
+			<div class="grid">
+			<div style="font-size: 16px; align-items: center" class="col-1">4 Columns</div>
+			<div style="font-size: 16px; align-items: center" class="col-1">4 Columns</div>
+			<div style="font-size: 16px; align-items: center" class="col-1">4 Columns</div>
+			</div>
 		</div>
 
 		<div class="card soft" id="guttergrid">
 			<h3>Grid With Gutters</h3>
-			<div class="col-xs-12 col-md-6">6 Columns</div>
-			<div class="col-xs-12 col-md-6">6 Columns</div>
+			<div class="grid">
+			<div style="font-size: 16px;" class="col-1">6 Columns</div>
+			<div style="font-size: 16px;" class="col-1">6 Columns</div>
+		</div>
 		</div>
 	</div>
 
@@ -295,33 +287,59 @@
 		];
 
 		// Let ran = Math.floor(Math.random()*Links.Length);
-		return
-		<table classes="${classes}">
-		<thead>
-			<tr>${head.reduce((r,o)=>r+ <th>${o}</th>','')}</tr></thead>
-			<tbody>${body.reduce((r,o,i)=>r+
-				'<tr>${
-					[i+1,...o].reduce((r,o)=>r+ <td>${o}</td>','')
-				}</tr>','')
-			}</tbody>
-			</table>
-			';
+		document.write(`
+				<table class="${classes}">
+					<thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
+					<tbody>${body.reduce((r,o,i)=>r+
+						`<tr>${
+							[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
+						}</tr>`,'')
+					}</tbody>
+				</table>	
+			`);
 		}
-	
+
 </script>
 	<div class="container" id="tables">
-		<h2>Tables</h2>/<div>
+		<h2>Tables</h2><div>
 
 	<div class="card soft">
 		<h3>Basic Table</h3>
+		<script>makeTable("table")</script>
 	</div>
-	<script> makeTable =("table") </script>
+
+	<div class="card soft">
+		<h3>Striped Table</h3>
+		<script>makeTable("table-striped")</script>
+	</div>
+
+	<div class="card soft">
+		<h3>Stripe Lined Horizontal</h3>
+		<script>makeTable("table-lined-horizontal")</script>
+	</div>
 	
+	<div class="card soft">
+		<h3>Stripe Lined Border</h3>
+		<script>makeTable("table-lined-border")</script>
+	</div>
+
+	<div class="card soft">
+		<h3>Stripe Lined All</h3>
+		<script>makeTable("table-lined-all")</script>
+	</div>
+
+	<div class="card soft">
+		<h3>Combinations</h3>
+		<script>makeTable("table-lined-vertical-border-striped")</script>
+	</div>
+	
+
 
 <div class="container" id="forms">
 	<h2>Forms</h2>
-	<h2>Inputs</h2>
 	<div class="card soft">
+		<h3>Inputs</h3>
+		<h3>Default Inputs</h3>
 		<form>
 			<input type="text"><br>
 			<input type="number"><br>
@@ -386,11 +404,13 @@
 
 			<button type="button"
 			class="form-button">Button</button>
-			<input type="button" class="form-button" value="input">
-			<a href="#anchor" class="form-button">Anchor</a>
+			<button type="button"
+			class="form-button">Input</button>
+			<button type="button"
+			class="form-button">Anchor</button>
 		</div>
 			
-			<h2>Hotdog</h2>
+<h2>Hotdog</h2>
 			<div class="soft card">
 				<div class="form-control">
 					<form>
@@ -399,7 +419,7 @@
 				</div>
 
 				<div class="form-control">
-					<form>
+					<form class="card flat">
 						<input type="search" class="hotdog" placeholder="Search">
 					</form>
 				</div>
@@ -417,8 +437,7 @@
 					</form>
 				</div>
 
-				<h2 id="select">Select</h2>
-
+<h2 id="select">Select</h2>
 				<div class="card soft">
 					<select name="" id="">
 						<option value="">1</option>
@@ -434,8 +453,9 @@
 
 <h2 id="Checkboxes">Checkboxes</h2>
 <div class="card soft">
-	<label>Label <input type="checkbox" id="input-1"></label>
-	<label for="input-1">Label</label>
+	<h3>Basic Checkbox</h3>
+	<label><input type="checkbox" id="input-1">Label 1</label>
+	<label><input type="checkbox" id="input-1">Label 2</label>
 
 
 	<h3>Heart Checkbox</h3>
@@ -444,8 +464,7 @@
 		<label for="heart-example">&hearts;</label>
 
 
-	<h3>Toggle</h3>
-	
+<h3>Toggle</h3>	
 <div class="toggle">
 		<input type="checkbox" id="toggle-1" class="hidden">
 		<label for="toggle-1"></label>
@@ -453,8 +472,80 @@
 	</div>
 </div>
 
-<h2>Color</h2>
-<body>
-	
+<h2>Color Palette</h2>
+<div class="color-container">
+  <div style="background-color:#1A2629;">#1A2629</div>
+  <div style="background-color:#A1A7AE;">#A1A7AE</div>
+  <div style="background-color:#0585CC;">#0585CC</div>
+  <div style="background-color:#90BFE2;">#90BFE2</div>
+  <div style="background-color:#495057;">#495057</div>
+</div>
+
+<h2>Figures</h2>
+<div class="card soft">
+	<h3>Basic Figure</h3>
+	<figure class="figure" id="basic">
+		<img src="https://via.placeholder.com/400x400?text=product">
+		<figcaption>Product</figcaption>
+	</figure>
+</div>
+
+<div class="card soft">
+	<h3>Figure Grid</h3>
+	<div class="grid">
+		<div class="col-1">
+		<figure class="figure">
+			<img src="https://via.placeholder.com/400x400?text=product">
+			<figcaption>Product</figcaption>
+		</figure>
+		</div>
+		<div class="col-1">
+		<figure class="figure">
+			<img src="https://via.placeholder.com/400x400?text=product">
+			<figcaption>Product</figcaption>
+		</figure>
+		</div>
+		<div class="col-1">
+		<figure class="figure">
+			<img src="https://via.placeholder.com/400x400?text=product">
+			<figcaption>Product</figcaption>
+		</figure>
+		</div>
+	</div>
+
+	<div class="card soft">
+	<h3>Product Grid</h3>
+	<div class="grid">
+		<div class="col-1">
+		<figure class="figure">
+			<img src="https://via.placeholder.com/400x400?text=product">
+			<figcaption>
+				<div>Product Name</div>
+				<div>$3.00</div>
+			</figcaption>
+		</figure>
+		</div>
+
+		<div class="col-1">
+		<figure class="figure">
+			<img src="https://via.placeholder.com/400x400?text=product">
+			<figcaption>
+				<div>Product Name</div>
+				<div>$3.00</div>
+			</figcaption>
+		</figure>
+		</div>
+
+		<div class="col-1">
+		<figure class="figure">
+			<img src="https://via.placeholder.com/400x400?text=product">
+			<figcaption>
+				<div>Product Name</div>
+				<div>$3.00</div>
+			</figcaption>
+		</figure>
+		</div>
+	</div>
+</div>
 </body>
 </html>
