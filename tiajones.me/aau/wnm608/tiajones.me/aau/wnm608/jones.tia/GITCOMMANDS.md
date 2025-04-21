@@ -1,0 +1,11 @@
+-What is the Terminal
+-Useful Terminal commands
+	-ls (window dir, mac ls)
+	-cd (change directory)
+	-mv (move directory)
+-What is git
+-Create a github account
+-Install Git on your computer
+-Useful Git commands
+
+-Git is a version control system that allows us to share code with other people while having a central hub for writing our code
