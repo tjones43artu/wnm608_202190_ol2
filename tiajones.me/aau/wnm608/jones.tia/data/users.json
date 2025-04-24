@@ -6,9 +6,21 @@
 		"classes":[101,102,103]
 	},
 	{
-		"name":"Tia Jones",
+		"name":"Sarah Carmicheal",
 		"type":"student",
-		"email":"tjones43@art.edu",
+		"email":"scarmichael@art.edu",
+		"classes":[101,102,103]
+	},
+	{
+		"name":"Mariah Johnson",
+		"type":"student",
+		"email":"mjohnson@art.edu",
+		"classes":[101,102,103]
+	},
+	{
+		"name":"Josh Armstrong",
+		"type":"student",
+		"email":"jarmstrong@art.edu",
 		"classes":[101,102,103]
 	},
 ]

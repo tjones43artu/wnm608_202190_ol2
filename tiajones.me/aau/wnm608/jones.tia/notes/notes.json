@@ -1,14 +1,3 @@
-notes.json
-
-brackets
-[]
-braces
-{}
-parentheses
-()
-carrots
-<>
-
 {
 	"notes" :[
 		"JSON files always start with either an array [] or an object",
@@ -16,6 +5,6 @@ carrots
 		"Commas go between items in array or object, but there should never be a trailing comma",
 		"All property names must be in quotation marks",
 		"All string quotation must be double quotes",
-        "Use a linter like jsonlint.com to check json",
-    ]
-}
+		"Use a linter like jsonlint.com to check json",
+		]
+	}
