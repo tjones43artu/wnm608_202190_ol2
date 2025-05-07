@@ -15,5 +15,8 @@
 	 	<p>We're pretty cool!</p>
 	 </div>
 	</div>
+
+	<?php include "parts/footer.php"; ?>
+	
 </body>
 </html>
