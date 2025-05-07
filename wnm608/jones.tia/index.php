@@ -25,11 +25,11 @@
 		<div class="flex-stretch"></div>
 	<nav class="nav flex-none">
 		<ul class="container display-flex">
-			<li class="flex-stretch"><a href="#index.php">Home</a></li>
-			<li class="flex-stretch"><a href="#about.php">About</a></li>
-			<li class="flex-stretch"><a href="#product_list.php">Shop</a></li>
-			<li class="flex-stretch"><a href="#blog.php">Blog</a></li>
-			<li class="flex-stretch"><a href="#contact.php">Contact</a></li>
+			<li class="flex-stretch"><a href="#article1">Home</a></li>
+			<li class="flex-stretch"><a href="#article2">About</a></li>
+			<li class="flex-stretch"><a href="#article3">Shop</a></li>
+			<li class="flex-stretch"><a href="#article4">Blog</a></li>
+			<li class="flex-stretch"><a href="#article4">Contact</a></li>
 		</ul>
 	</nav>
  	</div>
