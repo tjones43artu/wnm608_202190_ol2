@@ -103,7 +103,7 @@ echo <<<HTML
 
   for ($i=0; $i <count($users_array) ; $i++) {
     echo "<li>
-        <a href='admin/users.php?id=$i'{$users[$i]->name}</a>
+        <a href='https://tiajones.me/aau/wnm608/jones.tia/admin/users.php?id=$i'{$users[$i]->name}</a>
         <span>{$users_array[$i]->name}</span>
     </li>";
   }
