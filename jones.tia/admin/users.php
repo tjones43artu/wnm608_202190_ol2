@@ -4,6 +4,8 @@ include "../lib/php/functions.php";
 
 $users_array = file_get_json("../data/users.json");
 
+$users = file_get_json("../data/users.json");
+
 
 
 
@@ -12,7 +14,7 @@ $users_array = file_get_json("../data/users.json");
 
 function showUserPage() {
 
-$classes = implode(",", $user->claesses);
+$classes = implode(", ", $user->classes);
 
 // heredoc
 echo <<<HTML
@@ -29,7 +31,7 @@ echo <<<HTML
     </div>
     <div>
       <strong>Classes</strong>
-      <span>$user->classes</span>
+      <span>$classes</span>
     </div>
   </div>
   HTML;
@@ -98,15 +100,15 @@ echo <<<HTML
             
           
         
-  <?php  }
+        <?php  }
 
 
-  for ($i=0; $i <count($users_array) ; $i++) {
-    echo "<li>
-        <a href='https://tiajones.me/aau/wnm608/jones.tia/admin/users.php?id=$i'{$users[$i]->name}</a>
-        <span>{$users_array[$i]->name}</span>
-    </li>";
-  }
+        for ($i=0; $i <count($users_array) ; $i++) {
+        echo "<li>
+          <a href='https://tiajones.me/aau/wnm608/jones.tia/admin/users.php?id=$i'{$users[$i]->name}</a>
+          <span>{$users_array[$i]->name}</span>
+        </li>";
+        }
   
 
   ?>
