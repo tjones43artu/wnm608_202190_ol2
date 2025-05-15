@@ -1,56 +1,53 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Product List</title>
 
-<?php include "parts/meta.php"; ?>
+	<?php include "meta.php"; ?>
 </head>
 <body>
 
-	<?php include "parts/navbar.php"; ?>
+	<?php include 'parts/navbar.php';?>
 
-	<div class="container">
-	 <div class="card soft">
-	 	<h2>Product List</h2>
-	 	<ul>
-	 		<li>
-	 			<a href="product_item.php">Oceanic Blend</a>
-	 		</li>
-	 		<li>
-	 			<a href="product_item.php">Atlantic Breeze</a>
-	 		</li>
-	 		<li>
-	 			<a href="product_item.php">Double Chocolate Muffin</a>
-	 		</li>
-	 		<li>
-	 			<a href="product_item.php">Bagels</a>
-	 		</li>
-	 	</ul>
+  <div>
+  	<div>
+  		<h2>Product Lists</h2>
 
-	 	<?php
+  		<!--ul>-->
+  		<ul>
+  			<li><a href="product_item.php]">Product 1</a></li>
+  			<li><a href="product_item.php]">Product 2</a></li>
+  			<li><a href="product_item.php]">Product 3</a></li>
+  			<li><a href="product_item.php]">Product 4</a></li>
+  		</ul>
+  	
 
-	 	$host = "localhost";
-	 	$users = "tjones92";
-	 	$pass = "kawadamami12";
-	 	$database = "tjones_IXD608";
+		<?php
 
-	 	$conn = new mysqli($host, $user, $pass, $database);
+  		$host = "localhost";
+  		$user = "IXD608shopproducts";
+  		$pass =  "IXD608shopproducts";
+  		$database = "IXD608shopproducts";
 
-	 	if($conn->connect_errno) die($conn->connect_errno);
+  		$conn = new mysqli($host,$user,$pass,$database);
 
-	 	$result = $conn->querey("SELECT * FROM 'products'");
+  		if($conn->connect_errno) die($conn->connect_errno);
 
-	 	if($conn->errno) die($conn->error);
+  		$result = $conn->query("SELECT * FROM `products`");
 
-	 	while($row = $result->cubrid_fetch_object())
-	 		echo "<div>$row->price</div>";
+  		if($conn->errno) die($conn->errno);
 
-	 	?>
-	 </div>
-	</div>
+  		while($row = $result->fetch_object()) {
+  			echo ("$row->price");
+  		}
 
-	<?php include "parts/footer.php"; ?>
-	
+  		?>
+  		
+  	</div>
+  	</div>
+  
 </body>
+<?php include 'parts/footer.php';?>
+
 </html>
