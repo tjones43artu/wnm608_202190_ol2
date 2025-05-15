@@ -27,7 +27,7 @@
 
   		$host = "localhost";
   		$user = "IXD608shopproducts";
-  		$pass =  "IXD608shopproducts";
+  		$pass =  "";
   		$database = "IXD608shopproducts";
 
   		$conn = new mysqli($host,$user,$pass,$database);
