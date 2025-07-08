@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"name":"Tia Jones",
+		"type":"student",
+		"email":"tjones43@art.edu",
+		"classes":[101,102,103]
+	},
+	{
+		"id": 2,
+		"name":"Sarah Carmicheal",
+		"type":"student",
+		"email":"scarmichael@art.edu",
+		"classes":[101,102,103]
+	},
+	{
+		"id": 3,
+		"name":"Mariah Johnson",
+		"type":"student",
+		"email":"mjohnson@art.edu",
+		"classes":[101,102,103]
+	},
+	{
+		"id": 4,
+		"name":"Josh Armstrong",
+		"type":"student",
+		"email":"jarmstrong@art.edu",
+		"classes":[101,102,103]
+	}
+]
